@@ -1,0 +1,79 @@
+body {
+    background-color: #fff;
+    background-image: url(http://tpy111net.com/bg_top.jpg);
+    background-repeat: repeat-x;
+    margin: 0;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 14px;
+    text-decoration: none;
+    color: #333
+}
+
+.kl {
+    background-image: url(http://tpy111net.com/index_r4_c6.jpg);
+    background-repeat: repeat-y;
+    background-position: left top
+}
+
+.kr {
+    background-image: url(http://tpy111net.com/index_r4_c16.jpg);
+    background-repeat: repeat-y;
+    background-position: right top
+}
+
+.spec {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    background-image: url(http://tpy111net.com/index_r10_c13.jpg);
+    background-repeat: repeat-x
+}
+
+.f5 {
+    font-size: 13px;
+    font-style: normal;
+    line-height: 150%;
+    color: #bc0021;
+    text-decoration: none;
+    font-weight: 700
+}
+
+a.f5:link {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 150%;
+    color: #bc0021;
+    text-decoration: none;
+    font-weight: 700
+}
+
+a.f5:visited {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 150%;
+    color: #bc0021;
+    text-decoration: none;
+    font-weight: 700
+}
+
+a.f5:hover {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 700;
+    color: #bc0021;
+    text-decoration: underline
+}
+
+.menu_title {
+    color: #333;
+    background-color: #fff
+}
+
+.menu_title2 {
+    color: #000;
+    background-color: #39f
+}
