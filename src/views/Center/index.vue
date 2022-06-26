@@ -28,9 +28,7 @@
               />
             </td>
             <td
-              style="
-                background-image: url(http://tpy111net.com/image/index_r2_c11.jpg);
-              "
+            class="div-bg"
             >
               &nbsp;
             </td>
@@ -550,5 +548,9 @@ th.colalt {
 .menu_title2 {
   color: #000000;
   background-color: #3399ff;
+}
+.div-bg{
+                background-image: url(http://tpy111net.com/image/index_r2_c11.jpg);
+
 }
 </style>

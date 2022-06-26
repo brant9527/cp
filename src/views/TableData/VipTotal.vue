@@ -6,7 +6,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c6.jpg"
+                src="http://tpy111net.com/image/index_r2_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -14,7 +14,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r2_c11.jpg"
+                src="http://tpy111net.com/image/index_r2_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -22,7 +22,7 @@
             </td>
             <td style="width: 12px; height: 12px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c15.jpg"
+                src="http://tpy111net.com/image/index_r2_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -41,13 +41,7 @@
         <tbody>
           <tr>
             <td width="5" align="left" valign="top" class="kl"></td>
-            <td
-              align="center"
-              style="
-                height: 27px;
-                background-image: url(http://tpy111net.com/index_r4_c8.jpg);
-              "
-            >
+            <td align="center" class="div-bg">
               <table width="99%" border="0" cellpadding="0" cellspacing="0">
                 <tbody>
                   <tr>
@@ -203,7 +197,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c6.jpg"
+                src="http://tpy111net.com/image/index_r13_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -211,7 +205,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r13_c11.jpg"
+                src="http://tpy111net.com/image/index_r13_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -219,7 +213,7 @@
             </td>
             <td style="width: 12px; height: 8px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c15.jpg"
+                src="http://tpy111net.com/image/index_r13_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -287,7 +281,7 @@ export default {
 <style lang="scss" scoped>
 body {
   background-color: #ffffff;
-  background-image: url(http://tpy111net.com/bg_top.jpg);
+  background-image: url(http://tpy111net.com/image/bg_top.jpg);
   background-repeat: repeat-x;
   margin: 0px;
   font-size: 12px;
@@ -297,12 +291,12 @@ body {
   color: #333333;
 }
 .kl {
-  background-image: url(http://tpy111net.com/index_r4_c6.jpg);
+  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 .kr {
-  background-image: url(http://tpy111net.com/index_r4_c16.jpg);
+  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -353,7 +347,7 @@ a.f5:hover {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  background-image: url(http://tpy111net.com/index_r10_c13.jpg);
+  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
   background-repeat: repeat-x;
 }
 
@@ -365,5 +359,13 @@ a.f5:hover {
 .menu_title2 {
   color: #000000;
   background-color: #3399ff;
+}
+.lose {
+  color: White;
+  background-color: Red;
+}
+.div-bg {
+  height: 27px;
+  background-image: url(http://tpy111net.com/image/index_r4_c8.jpg);
 }
 </style>

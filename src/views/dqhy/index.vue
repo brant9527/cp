@@ -5,7 +5,7 @@
         <tr>
           <td style="width: 12px; height: 12px" align="left" valign="top">
             <img
-              src="http://tpy111net.com/index_r2_c6.jpg"
+              src="http://tpy111net.com/image/index_r2_c6.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -13,7 +13,7 @@
           </td>
           <td>
             <img
-              src="http://tpy111net.com/index_r2_c11.jpg"
+              src="http://tpy111net.com/image/index_r2_c11.jpg"
               width="100%"
               height="12px"
               alt=""
@@ -21,7 +21,7 @@
           </td>
           <td style="width: 12px; height: 12px" align="right" valign="top">
             <img
-              src="http://tpy111net.com/index_r2_c15.jpg"
+              src="http://tpy111net.com/image/index_r2_c15.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -65,7 +65,7 @@
                     <a @click="refresh()" style="color: blue; cursor: pointer">
                       <img
                         id="imgshuaxin"
-                        src="http://tpy111net.com/shuaxin.png"
+                        src="http://tpy111net.com/image/shuaxin.png"
                         style="width: 11pt"
                         alt="刷新"
                       />
@@ -172,7 +172,7 @@
                         <td align="right">
                           <span id="grivCard_Label18_0">{{item.remainValue}}</span>
                         </td>
-                        <td align="right">
+                        <td align="right" :class="item.zongying<0?'lose':''">
                           <span id="grivCard_Label17_0">{{item.zongying}}</span>
                         </td>
                         <td align="right">
@@ -327,7 +327,7 @@
         <tr>
           <td style="width: 12px; height: 12px" align="left" valign="top">
             <img
-              src="http://tpy111net.com/index_r13_c6.jpg"
+              src="http://tpy111net.com/image/index_r13_c6.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -335,7 +335,7 @@
           </td>
           <td>
             <img
-              src="http://tpy111net.com/index_r13_c11.jpg"
+              src="http://tpy111net.com/image/index_r13_c11.jpg"
               width="100%"
               height="12px"
               alt=""
@@ -343,7 +343,7 @@
           </td>
           <td style="width: 12px; height: 12px" align="right" valign="top">
             <img
-              src="http://tpy111net.com/index_r13_c15.jpg"
+              src="http://tpy111net.com/image/index_r13_c15.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -430,13 +430,13 @@ export default {
 }
 
 .kl {
-  background-image: url(http://tpy111net.com/index_r4_c6.jpg);
+  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 
 .kr {
-  background-image: url(http://tpy111net.com/index_r4_c16.jpg);
+  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -447,7 +447,10 @@ a:hover {
 }
 .div-kl{
             height: 35px; 
-            background-image: url(http://tpy111net.com/index_r4_c8.jpg)
+            background-image: url(http://tpy111net.com/image/index_r4_c8.jpg)
 
+}
+.lose{
+  color:White;background-color:Red;
 }
 </style>

@@ -1,13 +1,12 @@
 <template>
   <body>
     <form id="myForm">
-      
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tbody>
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c6.jpg"
+                src="http://tpy111net.com/image/index_r2_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -15,7 +14,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r2_c11.jpg"
+                src="http://tpy111net.com/image/index_r2_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -23,7 +22,7 @@
             </td>
             <td style="width: 12px; height: 12px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c15.jpg"
+                src="http://tpy111net.com/image/index_r2_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -36,14 +35,7 @@
         <tbody>
           <tr>
             <td width="5" align="left" valign="top" class="kl"></td>
-            <td
-              align="center"
-              style="
-                height: 27px;
-               
-              "
-              class="div-kl"
-            >
+            <td align="center" style="height: 27px" class="div-kl">
               <table width="99%" border="0" cellpadding="0" cellspacing="0">
                 <tbody>
                   <tr>
@@ -108,43 +100,63 @@
                           background-color: white;
                           font-size: 11px;
                           height: 25px;
-                          
                         "
                         v-for="item in form"
                         :key="item.key"
                       >
                         <td>
-                          <span id="grivGroup_Label11_0">{{item.date}}</span>
+                          <span id="grivGroup_Label11_0">{{ item.date }}</span>
                         </td>
                         <td>
-                          <span id="grivGroup_Label111_0">{{item.account}}</span>
+                          <span id="grivGroup_Label111_0">{{
+                            item.account
+                          }}</span>
                         </td>
                         <td>
-                          <span id="grivGroup_Label12_0">{{item.name}}</span>
+                          <span id="grivGroup_Label12_0">{{ item.name }}</span>
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label161_0">{{item.zongyama}}</span>
+                          <span id="grivGroup_Label161_0">{{
+                            item.zongyama
+                          }}</span>
+                        </td>
+                        <td
+                          align="right"
+                          :class="item.zongying < 0 ? 'lose' : ''"
+                        >
+                          <span id="grivGroup_Label17_0">{{
+                            item.zongying
+                          }}</span>
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label17_0">{{item.zongying}}</span>
+                          <span id="grivGroup_Label20_0"
+                            >{{ item.ximashezhi }}%</span
+                          >
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label20_0">{{item.ximashezhi}}%</span>
+                          <span id="grivGroup_Label40_0">{{
+                            item.ximaliang
+                          }}</span>
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label40_0">{{item.ximaliang}}</span>
+                          <span id="grivGroup_Label22_0">{{
+                            item.ximafei
+                          }}</span>
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label22_0">{{item.ximafei}}</span>
+                          <span id="grivGroup_Label10_0">{{
+                            item.zongjiner
+                          }}</span>
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label10_0">{{item.zongjiner}}</span>
+                          <span id="grivGroup_Label7_0"
+                            >{{ item.zhancheng }}%</span
+                          >
                         </td>
                         <td align="right">
-                          <span id="grivGroup_Label7_0">{{item.zhancheng}}%</span>
-                        </td>
-                        <td align="right">
-                          <span id="grivGroup_Label1111_0">{{item.gongsijiner}}</span>
+                          <span id="grivGroup_Label1111_0">{{
+                            item.gongsijiner
+                          }}</span>
                         </td>
                       </tr>
                     </tbody>
@@ -161,7 +173,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c6.jpg"
+                src="http://tpy111net.com/image/index_r13_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -169,7 +181,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r13_c11.jpg"
+                src="http://tpy111net.com/image/index_r13_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -177,7 +189,7 @@
             </td>
             <td style="width: 12px; height: 8px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c15.jpg"
+                src="http://tpy111net.com/image/index_r13_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -208,7 +220,6 @@ export default {
   },
   methods: {
     isSameAccount(item) {
-
       return (item.account = this.account);
     },
     async getInfo() {
@@ -235,196 +246,203 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
- #Grid {position:relative;top:0pt;left:5pt;font-size:9pt;}
+#Grid {
+  position: relative;
+  top: 0pt;
+  left: 5pt;
+  font-size: 9pt;
+}
 body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	SCROLLBAR-ARROW-COLOR:#FFFFFF;
-    SCROLLBAR-FACE-COLOR:#0099CC;
-    SCROLLBAR-DARKSHADOW-COLOR:#FFFFFF;
-    SCROLLBAR-HIGHLIGHT-COLOR:#00CCFF;
-    SCROLLBAR-3DLIGHT-COLOR:#006699;
-    SCROLLBAR-SHADOW-COLOR:#006699;
-    SCROLLBAR-TRACK-COLOR:#FFFFFF;
-	}
-
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  scrollbar-arrow-color: #ffffff;
+  scrollbar-face-color: #0099cc;
+  scrollbar-darkshadow-color: #ffffff;
+  scrollbar-highlight-color: #00ccff;
+  scrollbar-3dlight-color: #006699;
+  scrollbar-shadow-color: #006699;
+  scrollbar-track-color: #ffffff;
+}
 
 td {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 0px;
-	text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 0px;
+  text-decoration: none;
 }
 .show {
-	filter: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=ture);
-}.k1 {
-	border-right-width: 1px;
-	border-bottom-width: 2px;
-	border-left-width: 1px;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-right-color: #010134;
-	border-bottom-color: #010134;
-	border-left-color: #010134;
+  filter: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=ture);
+}
+.k1 {
+  border-right-width: 1px;
+  border-bottom-width: 2px;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-color: #010134;
+  border-bottom-color: #010134;
+  border-left-color: #010134;
 }
 .f2 {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	font-weight: bold;
-	color: #000000;
-	text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
 }
 .f3 {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
 }
 a:link {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	color: #000000;
-	text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  color: #000000;
+  text-decoration: none;
 }
 a:visited {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	color: #000000;
-	text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  color: #000000;
+  text-decoration: none;
 }
 a:hover {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	color: #003399;
-	text-decoration: underline;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  color: #003399;
+  text-decoration: underline;
 }
 a.f2:link {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	font-weight: bold;
-	color: #000000;
-	text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
 }
 a.f2:visited {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	font-weight: bold;
-	color: #000000;
-	text-decoration: none;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
 }
 a.f2:hover {
-	font-size: 12px;
-	font-style: normal;
-	line-height: 150%;
-	font-weight: bold;
-	color: #003399;
-	text-decoration: underline;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: bold;
+  color: #003399;
+  text-decoration: underline;
 }
-.over{
-background-color: #0066CC;
-color: #fff;
+.over {
+  background-color: #0066cc;
+  color: #fff;
 }
 .f4 {
-	font-size: 14px;
-	font-style: normal;
-	line-height: 150%;
-	color: #0066CC;
-	text-decoration: none;
-	font-weight: bold;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
 }
 .f5 {
-	font-size: 13px;
-	font-style: normal;
-	line-height: 150%;
-	color: #bc0021;
-	text-decoration: none;
-	font-weight: bold;
-    }
+  font-size: 13px;
+  font-style: normal;
+  line-height: 150%;
+  color: #bc0021;
+  text-decoration: none;
+  font-weight: bold;
+}
 a.f5:link {
-	font-size: 14px;
-	font-style: normal;
-	line-height: 150%;
-	color: #bc0021;
-	text-decoration: none;
-	font-weight: bold;
-    }    
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  color: #bc0021;
+  text-decoration: none;
+  font-weight: bold;
+}
 a.f5:visited {
-	font-size: 14px;
-	font-style: normal;
-	line-height: 150%;
-	color: #bc0021;
-	text-decoration: none;
-    font-weight: bold;
-    }
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  color: #bc0021;
+  text-decoration: none;
+  font-weight: bold;
+}
 a.f5:hover {
-	font-size: 14px;
-	font-style: normal;
-	line-height: 150%;
-	font-weight: bold;
-	color: #bc0021;
-	text-decoration: underline;
-    }    
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: bold;
+  color: #bc0021;
+  text-decoration: underline;
+}
 .K9 {
-	background-color: #FFFFFF;
-	border: 1px solid #010133;
-	width: 150px;
+  background-color: #ffffff;
+  border: 1px solid #010133;
+  width: 150px;
 }
 .K10 {
-	background-color: #FFFFFF;
-	border: 1px solid #010133;
-	width: 155px;
+  background-color: #ffffff;
+  border: 1px solid #010133;
+  width: 155px;
 }
 .kl {
-	background-image: url(http://tpy111net.com/index_r4_c6.jpg);
-	background-repeat: repeat-y;
-	background-position: left top;
+  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-repeat: repeat-y;
+  background-position: left top;
 }
 .kr {
-	background-image: url(http://tpy111net.com/index_r4_c16.jpg);
-	background-repeat: repeat-y;
-	background-position: right top;
+  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-repeat: repeat-y;
+  background-position: right top;
 }
 
-.spec { 
-	font-size: 12px;
-	line-height: 18px;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
-	background-image: url(http://tpy111net.com/index_r10_c13.jpg);
-	background-repeat: repeat-x;
+.spec {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
+  background-repeat: repeat-x;
 }
 
 th.colalt {
-border-left: 1px solid #C1DAD7;
-border-top: 0;
-background: #f5fafa url(http://tpy111net.com/bullet2.gif) no-repeat;
-font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica,
-sans-serif;
-color: #B4AA9D;
+  border-left: 1px solid #c1dad7;
+  border-top: 0;
+  background: #f5fafa url(http://tpy111net.com/image/bullet2.gif) no-repeat;
+  font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #b4aa9d;
 }
 .menu_title {
-	COLOR: #333333; background-color: #ffffff; 
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .menu_title2 {
-	COLOR: #000000; background-color: #3399FF; 
+  color: #000000;
+  background-color: #3399ff;
 }
-.div-kl{
-   background-image: url(http://tpy111net.com/index_r4_c8.jpg);
+.div-kl {
+  background-image: url(http://tpy111net.com/image/index_r4_c8.jpg);
 }
-
-
+.lose {
+  color: White;
+  background-color: Red;
+}
 </style>

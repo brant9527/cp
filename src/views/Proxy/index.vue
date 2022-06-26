@@ -1,16 +1,12 @@
 <template>
   <body>
-    <form
-    
-      id="myForm"
-    >
-
+    <form id="myForm">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tbody>
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c6.jpg"
+                src="http://tpy111net.com/image/index_r2_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -18,7 +14,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r2_c11.jpg"
+                src="http://tpy111net.com/image/index_r2_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -26,7 +22,7 @@
             </td>
             <td style="width: 12px; height: 12px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c15.jpg"
+                src="http://tpy111net.com/image/index_r2_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -48,7 +44,7 @@
             <td
               height="27"
               align="center"
-              style="background-image: url(http://tpy111net.com/index_r4_c8.jpg)"
+              class="div-bg"
             >
               <table width="99%" border="0" cellpadding="0" cellspacing="0">
                 <tbody>
@@ -63,7 +59,7 @@
                       >
                         <img
                           id="imgshuaxin"
-                          src="http://tpy111net.com/shuaxin.png"
+                          src="http://tpy111net.com/image/shuaxin.png"
                           style="width: 11pt"
                           alt="刷新"
                         />
@@ -165,37 +161,57 @@
                           :key="item.key"
                         >
                           <td>
-                            <span id="grivGroup_LabelName_0">{{item.account}}</span>
+                            <span id="grivGroup_LabelName_0">{{
+                              item.account
+                            }}</span>
                           </td>
                           <td>
-                            <span id="grivGroup_Label2_0">{{item.name}}</span>
+                            <span id="grivGroup_Label2_0">{{ item.name }}</span>
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label10_0">{{item.creditValue}}</span>
+                            <span id="grivGroup_Label10_0">{{
+                              item.creditValue
+                            }}</span>
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label11_0">{{item.remainValue}}</span>
+                            <span id="grivGroup_Label11_0">{{
+                              item.remainValue
+                            }}</span>
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label4_0">{{item.zongyama}}</span>
+                            <span id="grivGroup_Label4_0">{{
+                              item.zongyama
+                            }}</span>
+                          </td>
+                          <td align="right" :class="item.zongying<0?'lose':''">
+                            <span id="grivGroup_Label05_0">{{
+                              item.zongying
+                            }}</span>
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label05_0">{{item.zongying}}</span>
+                            <span id="grivGroup_Label20_0"
+                              >{{ item.ximaleibie + " " + item.ximabi }}%</span
+                            >
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label20_0">{{item.ximaleibie+' '+item.ximabi}}%</span>
+                            <span id="grivGroup_Label40_0">{{
+                              item.ximaliang
+                            }}</span>
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label40_0">{{item.ximaliang}}</span>
+                            <span id="grivGroup_Label22_0">{{
+                              item.ximafei
+                            }}</span>
                           </td>
                           <td align="right">
-                            <span id="grivGroup_Label22_0">{{item.ximafei}}</span>
-                          </td>
-                          <td align="right">
-                            <span id="grivGroup_Label7_0">{{item.zhancheng}}%</span>
+                            <span id="grivGroup_Label7_0"
+                              >{{ item.zhancheng }}%</span
+                            >
                           </td>
                           <td>
-                            <span id="grivGroup_Label21_0">{{item.zanting}}</span>
+                            <span id="grivGroup_Label21_0">{{
+                              item.zanting
+                            }}</span>
                           </td>
                           <td>
                             <span id="grivGroup_Label23_0"></span>
@@ -207,7 +223,6 @@
                                   <td>
                                     <a
                                       id="grivGroup_LinkButton2_0"
-                                     
                                       @click="nextLevel(item)"
                                       >下级代理</a
                                     >
@@ -216,9 +231,7 @@
                                   <td>
                                     <a
                                       id="grivGroup_LinkButton1_0"
-
                                       @click="currentVip(item)"
-
                                       >当前会员</a
                                     >&nbsp;
                                   </td>
@@ -235,7 +248,6 @@
                             </table>
                           </td>
                         </tr>
-                       
                       </tbody>
                     </table>
                   </div>
@@ -251,7 +263,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c6.jpg"
+                src="http://tpy111net.com/image/index_r13_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -259,7 +271,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r13_c11.jpg"
+                src="http://tpy111net.com/image/index_r13_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -267,7 +279,7 @@
             </td>
             <td style="width: 12px; height: 12px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c15.jpg"
+                src="http://tpy111net.com/image/index_r13_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -344,7 +356,6 @@
                 >
               </td>
             </tr>
-      
           </tbody>
         </table>
         <table align="center">
@@ -661,8 +672,6 @@
       <div id="fade" class="black_overlay"></div>
       <input type="hidden" id="crd" name="crd" />
     </form>
-
-   
   </body>
 </template>
 
@@ -670,8 +679,8 @@
 export default {
   data() {
     return {
-      account: '',
-      form:[]
+      account: "",
+      form: [],
     };
   },
 
@@ -679,148 +688,225 @@ export default {
     async getInfo() {
       let { dataList, code, pic } = await this.$http.post(
         "/api/data/getAgentList",
-        {  account: this.account }
+        { account: this.account }
       );
 
       this.form = dataList;
     },
-    nextLevel(item){
-        this.account = item.account
-        this.getInfo()
+    nextLevel(item) {
+      this.account = item.account;
+      this.getInfo();
     },
-    currentVip(item){
-      event.preventDefault()
-      this.$emit('changeComp',
-      
-      {
-        type:'dqhy',
-        dataTemp:{account:item.account}
-      })
-    }
+    currentVip(item) {
+      event.preventDefault();
+      this.$emit(
+        "changeComp",
+
+        {
+          type: "dqhy",
+          dataTemp: { account: item.account },
+        }
+      );
+    },
   },
   mounted() {
-    this.account = localStorage.getItem('account')
+    this.account = localStorage.getItem("account");
     this.getInfo();
   },
 };
 </script>
 
 <style lang="scss" scoped>
-  a{
-    text-decoration: underline;
-        color: -webkit-link;
-    cursor: pointer;
-  }
-        .kl {
-            background-image: url(http://tpy111net.com/index_r4_c6.jpg);
-            background-repeat: repeat-y;
-            background-position: left top;
-        }
+a {
+  text-decoration: underline;
+  color: -webkit-link;
+  cursor: pointer;
+}
+.kl {
+  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-repeat: repeat-y;
+  background-position: left top;
+}
 
-        .kr {
-            background-image: url(http://tpy111net.com/index_r4_c16.jpg);
-            background-repeat: repeat-y;
-            background-position: right top;
-        }
-        .black_overlay {
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    z-index: 1001;
-    -moz-opacity: .8;
-    opacity: .8;
-    filter: alpha(opacity=88);
-    opacity: .5
+.kr {
+  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-repeat: repeat-y;
+  background-position: right top;
+}
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=88);
+  opacity: 0.5;
 }
 
 .white_content {
-    display: none;
-    position: fixed;
-    top: 20%;
-    left: 30%;
-    width: 25%;
-    height: 25%;
-    padding: 5px;
-    border: 2px solid orange;
-    z-index: 1002;
-    overflow: auto;
-    background-color: #fff;
-    background-image: url(http://tpy111net.com/bg_top.jpg);
-    background-repeat: repeat-x;
-    margin: 0;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 15px;
-    text-decoration: none;
-    color: #333;
-    text-align: center
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 25%;
+  height: 25%;
+  padding: 5px;
+  border: 2px solid orange;
+  z-index: 1002;
+  overflow: auto;
+  background-color: #fff;
+  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
 }
 
 .b1 {
-    background-color: #fff;
-    background-image: url(http://tpy111net.com/bg_top.jpg);
-    background-repeat: repeat-x;
-    margin: 0;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 15px;
-    text-decoration: none;
-    color: #333
+  background-color: #fff;
+  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  text-decoration: none;
+  color: #333;
 }
 
 .white_content2 {
-    display: none;
-    position: fixed;
-    top: 20%;
-    left: 30%;
-    width: 50%;
-    height: 55%;
-    padding: 5px;
-    border: 2px solid orange;
-    z-index: 1002;
-    overflow: auto;
-    background-color: #fff;
-    background-image: url(http://tpy111net.com/bg_top.jpg);
-    background-repeat: repeat-x;
-    margin: 0;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 15px;
-    text-decoration: none;
-    color: #333;
-    text-align: center
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 50%;
+  height: 55%;
+  padding: 5px;
+  border: 2px solid orange;
+  z-index: 1002;
+  overflow: auto;
+  background-color: #fff;
+  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
 }
 
 .white_content3 {
-    display: none;
-    position: fixed;
-    top: 20%;
-    left: 30%;
-    width: 30%;
-    height: 50%;
-    padding: 5px;
-    border: 2px solid orange;
-    z-index: 1002;
-    overflow: auto;
-    background-color: #fff;
-    background-image: url(http://tpy111net.com/bg_top.jpg);
-    background-repeat: repeat-x;
-    margin: 0;
-    font-size: 15px;
-    font-style: normal;
-    line-height: 15px;
-    text-decoration: none;
-    color: #333;
-    text-align: center
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 30%;
+  height: 50%;
+  padding: 5px;
+  border: 2px solid orange;
+  z-index: 1002;
+  overflow: auto;
+  background-color: #fff;
+  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 15px;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
 }
 
 body {
-    position: relative
+  position: relative;
 }
-body{background-color:#fff;background-image:url(http://tpy111net.com/bg_top.jpg);background-repeat:repeat-x;margin:0;font-size:12px;font-style:normal;line-height:15px;text-decoration:none;color:#333}.kl{background-image:url(http://tpy111net.com/index_r4_c6.jpg);background-repeat:repeat-y;background-position:left top}.kr{background-image:url(http://tpy111net.com/index_r4_c16.jpg);background-repeat:repeat-y;background-position:right top}.spec{font-size:12px;line-height:18px;font-weight:700;color:#fff;text-decoration:none;background-image:url(http://tpy111net.com/index_r10_c13.jpg);background-repeat:repeat-x}.f5{font-size:13px;font-style:normal;line-height:150%;color:#bc0021;text-decoration:none;font-weight:700}a.f5:link{font-size:14px;font-style:normal;line-height:150%;color:#bc0021;text-decoration:none;font-weight:700}a.f5:visited{font-size:14px;font-style:normal;line-height:150%;color:#bc0021;text-decoration:none;font-weight:700}a.f5:hover{font-size:14px;font-style:normal;line-height:150%;font-weight:700;color:#bc0021;text-decoration:underline}.menu_title{color:#333;background-color:#fff}.menu_title2{color:#000;background-color:#39f}
-    
+body {
+  background-color: #fff;
+  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-repeat: repeat-x;
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  text-decoration: none;
+  color: #333;
+}
+.kl {
+  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-repeat: repeat-y;
+  background-position: left top;
+}
+.kr {
+  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-repeat: repeat-y;
+  background-position: right top;
+}
+.spec {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
+  background-repeat: repeat-x;
+}
+.f5 {
+  font-size: 13px;
+  font-style: normal;
+  line-height: 150%;
+  color: #bc0021;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.f5:link {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  color: #bc0021;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.f5:visited {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  color: #bc0021;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.f5:hover {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 150%;
+  font-weight: 700;
+  color: #bc0021;
+  text-decoration: underline;
+}
+.menu_title {
+  color: #333;
+  background-color: #fff;
+}
+.menu_title2 {
+  color: #000;
+  background-color: #39f;
+}
+.lose {
+  color: White;
+  background-color: Red;
+}
+.div-bg{
+    background-image: url(http://tpy111net.com/image/index_r4_c8.jpg);
+}
 </style>

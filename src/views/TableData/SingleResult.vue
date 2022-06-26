@@ -6,7 +6,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c6.jpg"
+                src="http://tpy111net.com/image/index_r2_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -14,7 +14,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r2_c11.jpg"
+                src="http://tpy111net.com/image/index_r2_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -22,7 +22,7 @@
             </td>
             <td style="width: 12px; height: 12px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r2_c15.jpg"
+                src="http://tpy111net.com/image/index_r2_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -35,13 +35,7 @@
         <tbody>
           <tr>
             <td width="5" align="left" valign="top" class="kl"></td>
-            <td
-              align="center"
-              style="
-                height: 27px;
-                background-image: url(http://tpy111net.com/index_r4_c8.jpg);
-              "
-            >
+            <td align="center" class="div-bg">
               <table width="99%" border="0" cellpadding="0" cellspacing="0">
                 <tbody>
                   <tr>
@@ -73,8 +67,8 @@
                       'border-width': '0px',
                       'background-color': 'Black',
                       'font-family': 'Arial',
-                      'width': '98%',
-                      'visibility': form && form.length > 0 ? '' : 'hidden',
+                      width: '98%',
+                      visibility: form && form.length > 0 ? '' : 'hidden',
                     }"
                   >
                     <tbody>
@@ -138,10 +132,11 @@
                             item.zongyama
                           }}</span>
                         </td>
-                        <td align="right"
-                         :class="item.zongying<0?'lose':''">
-                          <span id="grivGroup_Label6_0"
-                         >{{
+                        <td
+                          align="right"
+                          :class="item.zongying < 0 ? 'lose' : ''"
+                        >
+                          <span id="grivGroup_Label6_0">{{
                             item.zongying
                           }}</span>
                         </td>
@@ -233,7 +228,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c6.jpg"
+                src="http://tpy111net.com/image/index_r13_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -241,7 +236,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/index_r13_c11.jpg"
+                src="http://tpy111net.com/image/index_r13_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -249,7 +244,7 @@
             </td>
             <td style="width: 12px; height: 8px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/index_r13_c15.jpg"
+                src="http://tpy111net.com/image/index_r13_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -281,7 +276,7 @@ export default {
   methods: {
     isSameAccount(item) {
       console.log("判断", item.account, this.account);
-      return (item.account ==this.account);
+      return item.account == this.account;
     },
     async getInfo() {
       let { dataList, code, pic } = await this.$http.post(
@@ -292,8 +287,11 @@ export default {
       this.form = dataList;
     },
     async nextLevel(item) {
-      let { dataList, code, pic } = await this.$http.post("/api/data/getAgentList",{account:item.account});
-      
+      let { dataList, code, pic } = await this.$http.post(
+        "/api/data/getAgentList",
+        { account: item.account }
+      );
+
       this.form = dataList;
     },
     current(item) {
@@ -481,13 +479,13 @@ a.f5:hover {
 }
 
 .kl {
-  background-image: url(http://tpy111net.com/index_r4_c6.jpg);
+  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 
 .kr {
-  background-image: url(http://tpy111net.com/index_r4_c16.jpg);
+  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -498,15 +496,14 @@ a.f5:hover {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  background-image: url(http://tpy111net.com/index_r10_c13.jpg);
+  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
   background-repeat: repeat-x;
 }
 
 th.colalt {
   border-left: 1px solid #c1dad7;
   border-top: 0;
-  background: #f5fafa url(http://tpy111net.com/bullet2.gif)
-    no-repeat;
+  background: #f5fafa url(http://tpy111net.com/image/bullet2.gif) no-repeat;
   font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   color: #b4aa9d;
 }
@@ -524,7 +521,12 @@ th.colalt {
 .td-class:hover {
   background-color: #8ec26f !important;
 }
-.lose{
-  color:White;background-color:Red;
+.lose {
+  color: White;
+  background-color: Red;
+}
+.div-bg {
+  height: 27px;
+  background-image: url(http://tpy111net.com/image/index_r4_c8.jpg);
 }
 </style>
