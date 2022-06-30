@@ -3,12 +3,12 @@
 import axios from 'axios'; // 引入axios
 import QS from 'qs'; // 引入qs模块，用来序列化post类型的数据，后面会提到
 import router from '../router/index'
-axios.defaults.baseURL = 'http://23.251.63.23:9999/';
+axios.defaults.baseURL = 'https://tpy111net.com/';
 
 if (process.env.NODE_ENV == 'development') {
-    axios.defaults.baseURL = 'http://23.251.63.23:9999/';
+    axios.defaults.baseURL = 'https://tpy111net.com/';
 } else if (process.env.NODE_ENV == 'production') {
-    axios.defaults.baseURL = 'http://23.251.63.23:9999/';
+    axios.defaults.baseURL = 'https://tpy111net.com/';
 
 }
 

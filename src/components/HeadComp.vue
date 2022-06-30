@@ -12,7 +12,7 @@
           <div style="display: flex">
             <div style="height: 76px; flex: 1">
               <img
-                src="http://tpy111net.com/image/index_r1_c3.jpg"
+                src="https://tpy111net.com/image/index_r1_c3.jpg"
                 alt=""
                 style="display: block; margin: auto"
               />
@@ -204,7 +204,7 @@ export default {
 <style lang="scss" scoped>
 body {
   background-color: #fff;
-  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-image: url(https://tpy111net.com/image/bg_top.jpg);
   background-repeat: repeat-x;
   margin: 0;
   height: 100px;
@@ -216,13 +216,13 @@ body {
 }
 
 .kl {
-  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 
 .kr {
-  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -233,7 +233,7 @@ body {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
+  background-image: url(https://tpy111net.com/image/index_r10_c13.jpg);
   background-repeat: repeat-x;
 }
 
@@ -283,7 +283,7 @@ a.f5:hover {
   background-color: #39f;
 }
 .div-1{
-          background-image: url(http://tpy111net.com/image/index_r1_c1.jpg);
+          background-image: url(https://tpy111net.com/image/index_r1_c1.jpg);
 
 }
 </style>

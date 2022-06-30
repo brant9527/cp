@@ -15,7 +15,7 @@ module.exports = {
 
       //第二个代理
       '/api': {
-          target: 'http://23.251.63.23:9999',//后端地址
+          target: 'https://tpy111net.com/',//后端地址
           //ws: true,
           changeOrigin: true,//是否跨域
           pathRewrite:{

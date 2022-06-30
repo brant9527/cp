@@ -11,7 +11,7 @@
         <tbody>
           <tr>
             <td style="width: 201px; line-height:0px;">
-              <img src="http://tpy111net.com/image/new_bg_r2_c2.jpg" width="224" height="17" />
+              <img src="https://tpy111net.com/image/new_bg_r2_c2.jpg" width="224" height="17" />
             </td>
           </tr>
         </tbody>
@@ -21,7 +21,7 @@
         border="0"
         cellpadding="0"
         cellspacing="0"
-        background="http://tpy111net.com/image/new_bg_r4_c2.jpg"
+        background="https://tpy111net.com/image/new_bg_r4_c2.jpg"
       >
         <tbody>
           <tr>
@@ -140,7 +140,7 @@
         <tbody>
           <tr>
             <td>
-              <img src="http://tpy111net.com/image/new_bg_r6_c2.jpg" width="224" height="17" />
+              <img src="https://tpy111net.com/image/new_bg_r6_c2.jpg" width="224" height="17" />
             </td>
           </tr>
         </tbody>
@@ -180,7 +180,9 @@ export default {
       e.preventDefault();
       Event.$emit('dateSelect',{
         type:'Single',
-        beginDate:this.singleDate
+        beginDate:this.singleDate,
+        endDate:this.singleDate
+
       })
     },
     mulDateSearch(e){

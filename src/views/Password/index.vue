@@ -28,18 +28,18 @@
           <tr>
             <td width="1%" height="12" align="left" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r2_c6.jpg"
+                src="https://tpy111net.com/image/index_r2_c6.jpg"
                 width="12"
                 height="12"
               />
             </td>
             <td
               width="98%"
-              background="http://tpy111net.com/image/index_r2_c11.jpg"
+              background="https://tpy111net.com/image/index_r2_c11.jpg"
             ></td>
             <td width="1%" height="12" align="right" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r2_c15.jpg"
+                src="https://tpy111net.com/image/index_r2_c15.jpg"
                 width="12"
                 height="12"
               />
@@ -166,7 +166,7 @@
           <tr>
             <td width="5" align="left" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r13_c6.jpg"
+                src="https://tpy111net.com/image/index_r13_c6.jpg"
                 width="12"
                 height="8"
               />
@@ -174,11 +174,11 @@
             <td
               width="98%"
               height="8"
-              background="http://tpy111net.com/image/index_r13_c11.jpg"
+              background="https://tpy111net.com/image/index_r13_c11.jpg"
             ></td>
             <td width="5" align="right" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r13_c15.jpg"
+                src="https://tpy111net.com/image/index_r13_c15.jpg"
                 width="12"
                 height="8"
               />
@@ -200,7 +200,7 @@ export default {};
 @import '@/assets/btnstyle.scss';
 body {
   background-color: #ffffff;
-  background-image: url(http://tpy111net.com/image/bg_top.jpg);
+  background-image: url(https://tpy111net.com/image/bg_top.jpg);
   background-repeat: repeat-x;
   margin: 0px;
   font-size: 12px;
@@ -211,12 +211,12 @@ body {
 }
 
 .kl {
-  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 .kr {
-  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -227,7 +227,7 @@ body {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
+  background-image: url(https://tpy111net.com/image/index_r10_c13.jpg);
   background-repeat: repeat-x;
 }
 

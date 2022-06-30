@@ -6,7 +6,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r2_c6.jpg"
+                src="https://tpy111net.com/image/index_r2_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -14,7 +14,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/image/index_r2_c11.jpg"
+                src="https://tpy111net.com/image/index_r2_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -22,7 +22,7 @@
             </td>
             <td style="width: 12px; height: 12px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r2_c15.jpg"
+                src="https://tpy111net.com/image/index_r2_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -68,7 +68,7 @@
                       'background-color': 'Black',
                       'font-family': 'Arial',
                       width: '98%',
-                      visibility: form && form.length > 0 ? '' : 'hidden',
+                      'visibility': form && form.length > 0 ? '' : 'hidden',
                     }"
                   >
                     <tbody>
@@ -228,7 +228,7 @@
           <tr>
             <td style="width: 12px; height: 12px" align="left" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r13_c6.jpg"
+                src="https://tpy111net.com/image/index_r13_c6.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -236,7 +236,7 @@
             </td>
             <td>
               <img
-                src="http://tpy111net.com/image/index_r13_c11.jpg"
+                src="https://tpy111net.com/image/index_r13_c11.jpg"
                 width="100%"
                 height="12px"
                 alt=""
@@ -244,7 +244,7 @@
             </td>
             <td style="width: 12px; height: 8px" align="right" valign="top">
               <img
-                src="http://tpy111net.com/image/index_r13_c15.jpg"
+                src="https://tpy111net.com/image/index_r13_c15.jpg"
                 width="12px"
                 height="12px"
                 alt=""
@@ -261,7 +261,7 @@
 export default {
   data() {
     return {
-      form: {},
+      form: [],
       account: window.localStorage.getItem("account"),
       currentAccount: "",
     };
@@ -281,7 +281,12 @@ export default {
     async getInfo() {
       let { dataList, code, pic } = await this.$http.post(
         "/api/data/getReportList",
-        { beginDate: this.dataInfo.beginDate, account: this.dataInfo.account }
+        {
+          beginDate: this.dataInfo.beginDate,
+          endDate: this.dataInfo.endDate,
+          account: this.dataInfo.account,
+          type:1
+        }
       );
 
       this.form = dataList;
@@ -291,7 +296,7 @@ export default {
         "/api/data/getAgentList",
         { account: item.account }
       );
-
+      
       this.form = dataList;
     },
     current(item) {
@@ -479,13 +484,13 @@ a.f5:hover {
 }
 
 .kl {
-  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 
 .kr {
-  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -496,14 +501,14 @@ a.f5:hover {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
+  background-image: url(https://tpy111net.com/image/index_r10_c13.jpg);
   background-repeat: repeat-x;
 }
 
 th.colalt {
   border-left: 1px solid #c1dad7;
   border-top: 0;
-  background: #f5fafa url(http://tpy111net.com/image/bullet2.gif) no-repeat;
+  background: #f5fafa url(https://tpy111net.com/image/bullet2.gif) no-repeat;
   font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   color: #b4aa9d;
 }
@@ -527,6 +532,6 @@ th.colalt {
 }
 .div-bg {
   height: 27px;
-  background-image: url(http://tpy111net.com/image/index_r4_c8.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c8.jpg);
 }
 </style>

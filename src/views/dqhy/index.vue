@@ -5,7 +5,7 @@
         <tr>
           <td style="width: 12px; height: 12px" align="left" valign="top">
             <img
-              src="http://tpy111net.com/image/index_r2_c6.jpg"
+              src="https://tpy111net.com/image/index_r2_c6.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -13,7 +13,7 @@
           </td>
           <td>
             <img
-              src="http://tpy111net.com/image/index_r2_c11.jpg"
+              src="https://tpy111net.com/image/index_r2_c11.jpg"
               width="100%"
               height="12px"
               alt=""
@@ -21,7 +21,7 @@
           </td>
           <td style="width: 12px; height: 12px" align="right" valign="top">
             <img
-              src="http://tpy111net.com/image/index_r2_c15.jpg"
+              src="https://tpy111net.com/image/index_r2_c15.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -65,7 +65,7 @@
                     <a @click="refresh()" style="color: blue; cursor: pointer">
                       <img
                         id="imgshuaxin"
-                        src="http://tpy111net.com/image/shuaxin.png"
+                        src="https://tpy111net.com/image/shuaxin.png"
                         style="width: 11pt"
                         alt="刷新"
                       />
@@ -327,7 +327,7 @@
         <tr>
           <td style="width: 12px; height: 12px" align="left" valign="top">
             <img
-              src="http://tpy111net.com/image/index_r13_c6.jpg"
+              src="https://tpy111net.com/image/index_r13_c6.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -335,7 +335,7 @@
           </td>
           <td>
             <img
-              src="http://tpy111net.com/image/index_r13_c11.jpg"
+              src="https://tpy111net.com/image/index_r13_c11.jpg"
               width="100%"
               height="12px"
               alt=""
@@ -343,7 +343,7 @@
           </td>
           <td style="width: 12px; height: 12px" align="right" valign="top">
             <img
-              src="http://tpy111net.com/image/index_r13_c15.jpg"
+              src="https://tpy111net.com/image/index_r13_c15.jpg"
               width="12px"
               height="12px"
               alt=""
@@ -430,13 +430,13 @@ export default {
 }
 
 .kl {
-  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 
 .kr {
-  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -447,7 +447,7 @@ a:hover {
 }
 .div-kl{
             height: 35px; 
-            background-image: url(http://tpy111net.com/image/index_r4_c8.jpg)
+            background-image: url(https://tpy111net.com/image/index_r4_c8.jpg)
 
 }
 .lose{

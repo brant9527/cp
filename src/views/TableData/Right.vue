@@ -246,12 +246,12 @@ a.f5:hover {
   width: 155px;
 }
 .kl {
-  background-image: url(http://tpy111net.com/image/index_r4_c6.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c6.jpg);
   background-repeat: repeat-y;
   background-position: left top;
 }
 .kr {
-  background-image: url(http://tpy111net.com/image/index_r4_c16.jpg);
+  background-image: url(https://tpy111net.com/image/index_r4_c16.jpg);
   background-repeat: repeat-y;
   background-position: right top;
 }
@@ -262,14 +262,14 @@ a.f5:hover {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  background-image: url(http://tpy111net.com/image/index_r10_c13.jpg);
+  background-image: url(https://tpy111net.com/image/index_r10_c13.jpg);
   background-repeat: repeat-x;
 }
 
 th.colalt {
   border-left: 1px solid #c1dad7;
   border-top: 0;
-  background: #f5fafa url(http://tpy111net.com/image/bullet2.gif)
+  background: #f5fafa url(https://tpy111net.com/image/bullet2.gif)
     no-repeat;
   font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   color: #b4aa9d;
